@@ -1,0 +1,11 @@
+14.0  
+8
+1       SQLCHAR       0       7       ","      1     idPersona            ""  
+2       SQLCHAR       0       100     ","      2     Cedula              SQL_Latin1_General_CP1_CI_AS
+3       SQLCHAR       0       100     ","      3     Nombre              SQL_Latin1_General_CP1_CI_AS
+4       SQLCHAR       0       100     ","      4     Apellido            SQL_Latin1_General_CP1_CI_AS
+5       SQLCHAR       0       100     ","      5     Telefono             ""
+6       SQLCHAR       0       100     ","      6     Celular              ""
+7       SQLCHAR       0       100     ","      7     Email               SQL_Latin1_General_CP1_CI_AS
+8       SQLCHAR       0       10      "\n"     8     idUbicacion          ""
+
