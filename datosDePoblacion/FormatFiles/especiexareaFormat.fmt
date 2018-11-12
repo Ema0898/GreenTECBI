@@ -1,0 +1,6 @@
+14.0  
+3
+1       SQLCHAR       0       7      ","      1    Cantidad                 ""
+2       SQLCHAR       0       7      ","      2    idEspecie                ""
+3       SQLCHAR       0       7      "\n"     3    idAreaParque             ""
+

@@ -1,20 +1,20 @@
 Alojamiento
 AreaParque X
-CadenaAlimenticia
+CadenaAlimenticia X
 Canton X
-Caracteristica
+Caracteristica X
 CategoriaAlojamiento X
 Comunidad X
 Distrito X
 Empleado
 EmpleadoXVehiculo
-Especie
-EspecieXArea
+Especie X
+EspecieXArea X
 EventoExcursion
 Excursion
-Horario
+Horario X
 HorarioXExcursion
-MedioTransporte
+MedioTransporte X 
 Organismo X
 Pais X
 Parque X
@@ -23,10 +23,10 @@ Persona
 PersonalInvestigador
 PersonalXArea
 Provincia X
-ProyectoInvestigacion
-Puesto
-Temporada
-TipoEspecie
+ProyectoInvestigacion X 
+Puesto X
+Temporada X
+TipoEspecie X 
 Ubicacion X 
-Vehiculo
+Vehiculo X
 Visitante

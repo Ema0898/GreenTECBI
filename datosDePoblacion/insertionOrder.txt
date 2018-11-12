@@ -10,3 +10,13 @@ ParqueXComunidad
 AreaParque
 CategoriaAlojamiento
 MedioTransporte
+TipoEspecie
+Caracteristica
+Temporada
+Puesto
+Vehiculo
+Horario
+Especie 
+EspecieXArea
+CadenaAlimenticia
+ProyectoInvestigacion

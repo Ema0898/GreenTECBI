@@ -1,0 +1,9 @@
+14.0  
+6
+1       SQLCHAR       0       7      ","      1    idEspecie                    ""
+2       SQLCHAR       0       100    ","      2    NombreCientifico        SQL_Latin1_General_CP1_CI_AS   
+3       SQLCHAR       0       100    ","      3    NombreVulgar            SQL_Latin1_General_CP1_CI_AS
+4       SQLCHAR       0       7      ","      4    idTipoEspecie                ""
+5       SQLCHAR       0       7      ","      5    idTemporada                  ""
+6       SQLCHAR       0       7      "\n"     6    idCaracteristica             ""
+

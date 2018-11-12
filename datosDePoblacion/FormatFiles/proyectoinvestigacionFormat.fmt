@@ -1,0 +1,8 @@
+14.0  
+5
+1       SQLCHAR       0       7       ","      1   idProyecto             ""
+2       SQLCHAR       0       10      ","     2    Presupuesto            ""
+3       SQLCHAR       0       100     ","     3    InicioPeriodo          SQL_Latin1_General_CP1_CI_AS
+4       SQLCHAR       0       100     ","     4    FinPeriodo             SQL_Latin1_General_CP1_CI_AS
+5       SQLCHAR       0       100     "\n"    5    idEspecie              ""
+

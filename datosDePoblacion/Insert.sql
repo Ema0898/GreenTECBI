@@ -110,5 +110,116 @@ WITH
 
 GO
 
+BULK INSERT MedioTransporte
+FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\Datos\MedioTransporte.txt'
+WITH
+(
+  FIRSTROW = 2,
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\mediotransporteFormat.fmt'
+)
+
+GO
+
+BULK INSERT TipoEspecie
+FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\Datos\TipoEspecie.txt'
+WITH
+(
+  FIRSTROW = 2,
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\tipoespecieFormat.fmt'
+)
+
+GO
+
+BULK INSERT Caracteristica
+FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\Datos\Caracteristica.txt'
+WITH
+(
+  FIRSTROW = 2,
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\caracteristicaFormat.fmt'
+)
+
+GO
+
+BULK INSERT Temporada
+FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\Datos\Temporada.txt'
+WITH
+(
+  FIRSTROW = 2,
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\temporadaFormat.fmt'
+)
+
+GO
+
+BULK INSERT Puesto
+FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\Datos\Puesto.txt'
+WITH
+(
+  FIRSTROW = 2,
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\puestoFormat.fmt'
+)
+
+GO
+
+BULK INSERT Vehiculo
+FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\Datos\Vehiculo.txt'
+WITH
+(
+  FIRSTROW = 2,
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\vehiculoFormat.fmt'
+)
+
+GO
+
+BULK INSERT Horario
+FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\Datos\Horario.txt'
+WITH
+(
+  FIRSTROW = 2,
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\horarioFormat.fmt'
+)
+
+GO
+
+BULK INSERT Especie
+FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\Datos\Especie.txt'
+WITH
+(
+  FIRSTROW = 2,
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\especieFormat.fmt'
+)
+
+GO
+
+BULK INSERT EspecieXArea
+FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\Datos\EspecieXArea.txt'
+WITH
+(
+  FIRSTROW = 2,
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\especiexareaFormat.fmt'
+)
+
+GO
+
+BULK INSERT CadenaAlimenticia
+FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\Datos\CadenaAlimenticia.txt'
+WITH
+(
+  FIRSTROW = 2,
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\cadenaalimenticiaFormat.fmt'
+)
+
+GO 
+
+BULK INSERT ProyectoInvestigacion
+FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\Datos\ProyectoInvestigacion.txt'
+WITH
+(
+  FIRSTROW = 2,
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\proyectoinvestigacionFormat.fmt',
+  KEEPNULLS
+)
+
+GO 
+
 
 
