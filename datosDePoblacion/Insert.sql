@@ -221,5 +221,54 @@ WITH
 
 GO 
 
+BULK INSERT Persona
+FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\Datos\Persona.txt'
+WITH
+(
+  FIRSTROW = 2,
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\personaFormat.fmt'
+)
 
+GO
 
+BULK INSERT Empleado
+FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\Datos\Empleado.txt'
+WITH
+(
+  FIRSTROW = 2,
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\empleadoFormat.fmt',
+  KEEPNULLS
+)
+
+GO
+
+BULK INSERT EmpleadoXVehiculo
+FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\Datos\EmpleadoXVehiculo.txt'
+WITH
+(
+  FIRSTROW = 2,
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\empleadoxvehiculoFormat.fmt',
+  KEEPNULLS
+)
+
+GO
+
+BULK INSERT PersonalInvestigador
+FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\Datos\PersonalInvestigador.txt'
+WITH
+(
+  FIRSTROW = 2,
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\personalinvestigadorFormat.fmt'
+) 
+
+GO 
+
+BULK INSERT PersonalXArea
+FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\Datos\PersonalXArea.txt'
+WITH
+(
+  FIRSTROW = 2,
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\personalxareaFormat.fmt'
+)  
+
+GO

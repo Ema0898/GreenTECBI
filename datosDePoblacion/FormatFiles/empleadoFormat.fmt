@@ -1,0 +1,9 @@
+14.0  
+6
+1       SQLCHAR       0       7       ","      1     idEmpleado           ""  
+2       SQLCHAR       0       7       ","      2     idPuesto             ""
+3       SQLCHAR       0       7       ","      3     idPersona            ""
+4       SQLCHAR       0       100     ","      4     Salario              ""
+5       SQLCHAR       0       7       ","      5     idParque             ""
+6       SQLCHAR       0       100     "\n"     6     Descripcion         SQL_Latin1_General_CP1_CI_AS
+

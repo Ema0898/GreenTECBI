@@ -6,8 +6,8 @@ Caracteristica X
 CategoriaAlojamiento X
 Comunidad X
 Distrito X
-Empleado
-EmpleadoXVehiculo
+Empleado X
+EmpleadoXVehiculo X
 Especie X
 EspecieXArea X
 EventoExcursion
@@ -19,9 +19,9 @@ Organismo X
 Pais X
 Parque X
 ParqueXComunidad X
-Persona 
-PersonalInvestigador
-PersonalXArea
+Persona X
+PersonalInvestigador X
+PersonalXArea X
 Provincia X
 ProyectoInvestigacion X 
 Puesto X

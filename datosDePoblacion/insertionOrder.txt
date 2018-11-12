@@ -20,3 +20,8 @@ Especie
 EspecieXArea
 CadenaAlimenticia
 ProyectoInvestigacion
+Persona
+Empleado
+EmpleadoXVehiculo
+PersonalInvestigador
+PersonalXArea
