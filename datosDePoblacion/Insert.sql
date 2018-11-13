@@ -5,7 +5,8 @@ FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacio
 WITH
 (
   FIRSTROW = 2,
-  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\Untitled.fmt'
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\Untitled.fmt',
+  MAXERRORS = 0
 )
 
 GO
@@ -15,7 +16,8 @@ FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacio
 WITH
 (
   FIRSTROW = 2,
-  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\provinciaFormat.fmt'
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\provinciaFormat.fmt',
+  MAXERRORS = 0
 )
 
 GO
@@ -25,7 +27,8 @@ FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacio
 WITH
 (
   FIRSTROW = 2,
-  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\cantonFormat.fmt'
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\cantonFormat.fmt',
+  MAXERRORS = 0
 )
 
 GO
@@ -35,7 +38,8 @@ FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacio
 WITH
 (
   FIRSTROW = 2,
-  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\distritoFormat.fmt'
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\distritoFormat.fmt',
+  MAXERRORS = 0
 )
 
 GO
@@ -45,7 +49,8 @@ FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacio
 WITH
 (
   FIRSTROW = 2,
-  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\ubicacionFormat.fmt'
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\ubicacionFormat.fmt',
+  MAXERRORS = 0
 )
 
 GO
@@ -55,7 +60,8 @@ FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacio
 WITH
 (
   FIRSTROW = 2,
-  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\parqueFormat.fmt'
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\parqueFormat.fmt',
+  MAXERRORS = 0
 )
 
 GO
@@ -65,7 +71,8 @@ FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacio
 WITH
 (
   FIRSTROW = 2,
-  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\organismoFormat.fmt'
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\organismoFormat.fmt',
+  MAXERRORS = 0
 )
 
 GO
@@ -75,7 +82,8 @@ FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacio
 WITH
 (
   FIRSTROW = 2,
-  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\comunidadFormat.fmt'
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\comunidadFormat.fmt',
+  MAXERRORS = 0
 )
 
 GO
@@ -85,7 +93,8 @@ FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacio
 WITH
 (
   FIRSTROW = 2,
-  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\parquexcomunidadFormat.fmt'
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\parquexcomunidadFormat.fmt',
+  MAXERRORS = 0
 )
 
 GO
@@ -95,7 +104,8 @@ FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacio
 WITH
 (
   FIRSTROW = 2,
-  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\areaparqueFormat.fmt'
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\areaparqueFormat.fmt',
+  MAXERRORS = 0
 )
 
 GO
@@ -105,7 +115,8 @@ FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacio
 WITH
 (
   FIRSTROW = 2,
-  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\categoriaAlojamientoFormat.fmt'
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\categoriaAlojamientoFormat.fmt',
+  MAXERRORS = 0
 )
 
 GO
@@ -115,7 +126,8 @@ FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacio
 WITH
 (
   FIRSTROW = 2,
-  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\mediotransporteFormat.fmt'
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\mediotransporteFormat.fmt',
+  MAXERRORS = 0
 )
 
 GO
@@ -125,7 +137,8 @@ FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacio
 WITH
 (
   FIRSTROW = 2,
-  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\tipoespecieFormat.fmt'
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\tipoespecieFormat.fmt',
+  MAXERRORS = 0
 )
 
 GO
@@ -135,7 +148,8 @@ FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacio
 WITH
 (
   FIRSTROW = 2,
-  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\caracteristicaFormat.fmt'
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\caracteristicaFormat.fmt',
+  MAXERRORS = 0
 )
 
 GO
@@ -145,7 +159,8 @@ FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacio
 WITH
 (
   FIRSTROW = 2,
-  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\temporadaFormat.fmt'
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\temporadaFormat.fmt',
+  MAXERRORS = 0
 )
 
 GO
@@ -155,7 +170,8 @@ FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacio
 WITH
 (
   FIRSTROW = 2,
-  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\puestoFormat.fmt'
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\puestoFormat.fmt',
+  MAXERRORS = 0
 )
 
 GO
@@ -165,7 +181,8 @@ FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacio
 WITH
 (
   FIRSTROW = 2,
-  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\vehiculoFormat.fmt'
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\vehiculoFormat.fmt',
+  MAXERRORS = 0
 )
 
 GO
@@ -175,7 +192,8 @@ FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacio
 WITH
 (
   FIRSTROW = 2,
-  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\horarioFormat.fmt'
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\horarioFormat.fmt',
+  MAXERRORS = 0
 )
 
 GO
@@ -185,7 +203,8 @@ FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacio
 WITH
 (
   FIRSTROW = 2,
-  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\especieFormat.fmt'
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\especieFormat.fmt',
+  MAXERRORS = 0
 )
 
 GO
@@ -195,7 +214,8 @@ FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacio
 WITH
 (
   FIRSTROW = 2,
-  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\especiexareaFormat.fmt'
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\especiexareaFormat.fmt',
+  MAXERRORS = 0
 )
 
 GO
@@ -205,7 +225,8 @@ FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacio
 WITH
 (
   FIRSTROW = 2,
-  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\cadenaalimenticiaFormat.fmt'
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\cadenaalimenticiaFormat.fmt',
+  MAXERRORS = 0
 )
 
 GO 
@@ -216,7 +237,8 @@ WITH
 (
   FIRSTROW = 2,
   FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\proyectoinvestigacionFormat.fmt',
-  KEEPNULLS
+  KEEPNULLS,
+  MAXERRORS = 0
 )
 
 GO 
@@ -226,7 +248,8 @@ FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacio
 WITH
 (
   FIRSTROW = 2,
-  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\personaFormat.fmt'
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\personaFormat.fmt',
+  MAXERRORS = 0
 )
 
 GO
@@ -237,7 +260,7 @@ WITH
 (
   FIRSTROW = 2,
   FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\empleadoFormat.fmt',
-  KEEPNULLS
+  MAXERRORS = 0 
 )
 
 GO
@@ -248,7 +271,8 @@ WITH
 (
   FIRSTROW = 2,
   FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\empleadoxvehiculoFormat.fmt',
-  KEEPNULLS
+  KEEPNULLS,
+  MAXERRORS = 0
 )
 
 GO
@@ -258,7 +282,8 @@ FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacio
 WITH
 (
   FIRSTROW = 2,
-  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\personalinvestigadorFormat.fmt'
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\personalinvestigadorFormat.fmt',
+  MAXERRORS = 0
 ) 
 
 GO 
@@ -268,7 +293,75 @@ FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacio
 WITH
 (
   FIRSTROW = 2,
-  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\personalxareaFormat.fmt'
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\personalxareaFormat.fmt',
+  MAXERRORS = 0
+)  
+
+GO
+
+BULK INSERT Visitante
+FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\Datos\Visitante.txt'
+WITH
+(
+  FIRSTROW = 2,
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\visitanteFormat.fmt',
+  KEEPNULLS,
+  MAXERRORS = 0
+) 
+
+GO
+
+BULK INSERT Pago
+FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\Datos\Pago.txt'
+WITH
+(
+  FIRSTROW = 2,
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\pagoFormat.fmt',
+  MAXERRORS = 0
+) 
+
+GO 
+
+BULK INSERT Alojamiento
+FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\Datos\Alojamiento.txt'
+WITH
+(
+  FIRSTROW = 2,
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\alojamientoFormat.fmt',
+  MAXERRORS = 0
+) 
+
+GO 
+
+BULK INSERT Excursion
+FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\Datos\Excursion.txt'
+WITH
+(
+  FIRSTROW = 2,
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\excursionFormat.fmt',
+  MAXERRORS = 0
+)  
+
+GO 
+
+BULK INSERT HorarioXExcursion
+FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\Datos\HorarioXExcursion.txt'
+WITH
+(
+  FIRSTROW = 2,
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\horarioxexcursionFormat.fmt',
+  MAXERRORS = 0
+)  
+
+GO
+
+BULK INSERT EventoExcursion
+FROM 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\Datos\EventoExcursion.txt'
+WITH
+(
+  FIRSTROW = 2,
+  FORMATFILE = 'C:\Users\aguis\OneDrive\Documentos\Repositorios\GreenTECBI\datosDePoblacion\FormatFiles\eventoexcursionFormat.fmt',
+  MAXERRORS = 0
 )  
 
 GO

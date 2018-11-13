@@ -22,7 +22,12 @@ CadenaAlimenticia
 ProyectoInvestigacion
 Persona
 Empleado
-Pago
 EmpleadoXVehiculo
 PersonalInvestigador
 PersonalXArea
+Visitante
+Pago
+Alojamiento
+Excursion
+HorarioXExcursion
+EventoExcursion

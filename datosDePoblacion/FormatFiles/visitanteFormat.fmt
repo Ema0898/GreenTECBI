@@ -4,4 +4,4 @@
 2       SQLCHAR       0       7       ","      2     idPersona                  ""
 3       SQLCHAR       0       7       ","      3     idAlojamiento              ""
 4       SQLCHAR       0       100     ","      4     FechaEntrada             SQL_Latin1_General_CP1_CI_AS
-5       SQLCHAR       0       100     ","      5     FechaSalida              SQL_Latin1_General_CP1_CI_AS
+5       SQLCHAR       0       100     "\n"      5     FechaSalida              SQL_Latin1_General_CP1_CI_AS

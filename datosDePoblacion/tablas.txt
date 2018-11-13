@@ -1,4 +1,4 @@
-Alojamiento
+Alojamiento X
 AreaParque X
 CadenaAlimenticia X
 Canton X
@@ -11,12 +11,12 @@ EmpleadoXVehiculo X
 Especie X
 EspecieXArea X
 EventoExcursion
-Excursion
+Excursion X
 Horario X
-HorarioXExcursion
+HorarioXExcursion X
 MedioTransporte X 
 Organismo X
-Pago
+Pago X
 Pais X
 Parque X
 ParqueXComunidad X
@@ -30,4 +30,4 @@ Temporada X
 TipoEspecie X 
 Ubicacion X 
 Vehiculo X
-Visitante
+Visitante X

@@ -1,4 +1,4 @@
-idEmpleado,idPuesto,idPersona,Salario,idParque,Descripcion
+idEmpleado,idPuesto,idPersona,idParque,Descripcion
 1,2,478,1,'Administracion'
 2,2,482,1,'Administracion'
 3,3,483,1,'Licenciatura en Zoologia'
