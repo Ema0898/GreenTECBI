@@ -16,6 +16,7 @@ Horario X
 HorarioXExcursion
 MedioTransporte X 
 Organismo X
+Pago
 Pais X
 Parque X
 ParqueXComunidad X

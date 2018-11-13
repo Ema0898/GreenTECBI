@@ -1,0 +1,7 @@
+14.0  
+5
+1       SQLCHAR       0       7       ","      1     idExcursion            ""  
+2       SQLCHAR       0       7       ","      2     idAlojamiento          ""
+3       SQLCHAR       0       100     ","      3     Nombre                 SQL_Latin1_General_CP1_CI_AS
+4       SQLCHAR       0       100     ","      4     PrecioOrganizacion     ""
+5       SQLCHAR       0       7       "\n"     5     idAreaParque           ""

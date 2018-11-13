@@ -1,0 +1,7 @@
+14.0  
+5
+1       SQLCHAR       0       7       ","      1     idEventoExcursion      ""  
+2       SQLCHAR       0       7       ","      2     idHorarioXExcursion    ""
+3       SQLCHAR       0       7       ","      3     idTipoVehiculo         ""
+4       SQLCHAR       0       7       ","      4     idVisitante            ""
+5       SQLCHAR       0       100     "\n"     5     PrecioEntrada           ""
