@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2048
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "greenTECAnalysis", "greenTECAnalysis\greenTECAnalysis.dwproj", "{9902AE32-A6B1-44C6-B5F4-102291E858AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9902AE32-A6B1-44C6-B5F4-102291E858AF}.Development|Default.ActiveCfg = Development
+		{9902AE32-A6B1-44C6-B5F4-102291E858AF}.Development|Default.Build.0 = Development
+		{9902AE32-A6B1-44C6-B5F4-102291E858AF}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8ABC759D-2EC1-4AED-ADB6-D04B83AE4E32}
+	EndGlobalSection
+EndGlobal

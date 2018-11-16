@@ -32,9 +32,7 @@ FROM
        INNER JOIN HorarioXExcursion he ON he.idExcursion = e.idExcursion
      GROUP BY he.Fecha
   ) org 
-
   INNER JOIN
-
   (
      SELECT SUM(pg.Monto) AS SalarioEmpleados , pg.Fecha AS Fecha2
      FROM Empleado e 
@@ -42,11 +40,9 @@ FROM
      GROUP BY pg.Fecha
   ) sal
   ON org.Fecha1 = sal.Fecha2
-  --ORDER BY org.Fecha1
 ) gastos
 INNER JOIN
 (
-
    SELECT PrecioAlojamiento + PrecioEntradaExcursion AS IngresoTotal, alojamiento.FechaEntrada FROM
    (
      SELECT SUM(aj.PrecioAlojamiento) AS PrecioAlojamiento, v.FechaEntrada
@@ -61,8 +57,7 @@ INNER JOIN
      INNER JOIN HorarioXExcursion he ON he.idHorarioXExcursion = evento.idHorarioXExcursion
      GROUP BY he.Fecha
    )
-   eventoexcursion ON alojamiento.FechaEntrada = eventoexcursion.Fecha
-   --ORDER BY eventoexcursion.Fecha
+   eventoexcursion ON alojamiento.FechaEntrada = eventoexcursion.Fecha   
 ) ingresos 
 ON gastos.Fecha = ingresos.FechaEntrada
 ORDER BY gastos.Fecha
