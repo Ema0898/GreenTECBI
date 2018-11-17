@@ -1,0 +1,161 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="68ecad78-5688-4dc1-be92-f373015b9906" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DW Green TEC</ID>
+  <Name>DW Green TEC</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>DW Green TEC</DataSourceID>
+  <Schema>
+    <xs:schema id="DW_x0020_Green_x0020_TEC" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="DW_x0020_Green_x0020_TEC" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="23a3c863-4f26-40d1-ae79-fe2e288e0496">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_D_Ingreso" msprop:design-time-name="a3fc65f5-8b45-425f-9c86-aa48ff248dd8" msprop:DbTableName="D_Ingreso" msprop:FriendlyName="D_Ingreso" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="idIngreso" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="a044ee6c-5a57-4642-a1b0-fb629bcddfa3" msprop:DbColumnName="idIngreso" msprop:FriendlyName="idIngreso" type="xs:int" />
+                  <xs:element name="IngresoAlojamiento" msprop:design-time-name="5dfd7a56-1caa-4720-96bf-45a9f5e43287" msprop:DbColumnName="IngresoAlojamiento" msprop:FriendlyName="IngresoAlojamiento" type="xs:long" />
+                  <xs:element name="IngresoExcursion" msprop:design-time-name="5c3a16fc-e451-4799-9505-5701e0473739" msprop:DbColumnName="IngresoExcursion" msprop:FriendlyName="IngresoExcursion" type="xs:long" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_D_Tiempo" msprop:design-time-name="53f0bf1b-43a8-445e-a76e-84b14e3d7542" msprop:DbTableName="D_Tiempo" msprop:FriendlyName="D_Tiempo" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="idTiempo" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="faf1b4dc-e8c6-4342-9796-d6178d609a4c" msprop:DbColumnName="idTiempo" msprop:FriendlyName="idTiempo" type="xs:int" />
+                  <xs:element name="Anio" msprop:design-time-name="ded649ea-7bdd-467b-a888-72a63ddab423" msprop:DbColumnName="Anio" msprop:FriendlyName="Anio" type="xs:int" />
+                  <xs:element name="Mes" msprop:design-time-name="b58526d8-fae1-4c52-a1d6-0c1368284d79" msprop:DbColumnName="Mes" msprop:FriendlyName="Mes" type="xs:int" />
+                  <xs:element name="Dia" msprop:design-time-name="66ff351b-c922-4088-b1af-1ad9e42d5160" msprop:DbColumnName="Dia" msprop:FriendlyName="Dia" type="xs:int" />
+                  <xs:element name="Trimestre" msprop:design-time-name="24ae5d7c-b9ec-43a8-a0a6-a07c1c5dff98" msprop:DbColumnName="Trimestre" msprop:FriendlyName="Trimestre" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_D_Gasto" msprop:design-time-name="340bb369-02a7-42e7-965b-ffe259171e7c" msprop:DbTableName="D_Gasto" msprop:FriendlyName="D_Gasto" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="idGasto" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="e565226b-4c33-4694-877d-68084a2df07f" msprop:DbColumnName="idGasto" msprop:FriendlyName="idGasto" type="xs:int" />
+                  <xs:element name="GastoEmpleado" msprop:design-time-name="8979c955-1a73-4b1e-b8de-94fdb2b1ea36" msprop:DbColumnName="GastoEmpleado" msprop:FriendlyName="GastoEmpleado" type="xs:long" />
+                  <xs:element name="GastoExcursion" msprop:design-time-name="0af59a17-0a4e-4625-a744-3a5ee0f06439" msprop:DbColumnName="GastoExcursion" msprop:FriendlyName="GastoExcursion" type="xs:long" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_D_ElementoParque" msprop:design-time-name="dfaeabab-a923-4ade-9de5-211f42b53bd1" msprop:DbTableName="D_ElementoParque" msprop:FriendlyName="D_ElementoParque" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="idElementoParque" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="e8d4f5ff-57ce-4f91-88af-fd72b563a84a" msprop:DbColumnName="idElementoParque" msprop:FriendlyName="idElementoParque" type="xs:int" />
+                  <xs:element name="NombreParque" msprop:design-time-name="37d522c5-eefb-40ab-b062-a2f6c4041ae6" msprop:DbColumnName="NombreParque" msprop:FriendlyName="NombreParque">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NombreAreaParque" msprop:design-time-name="c34c624c-0ada-47df-a575-3c946fc0b945" msprop:DbColumnName="NombreAreaParque" msprop:FriendlyName="NombreAreaParque">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NombreExcursion" msprop:design-time-name="d4fb73ef-d895-4258-ada8-61578dfe395d" msprop:DbColumnName="NombreExcursion" msprop:FriendlyName="NombreExcursion">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_H_DW" msprop:design-time-name="384fce53-c029-42e8-b640-aaf57d4ce9cd" msprop:DbTableName="H_DW" msprop:FriendlyName="H_DW" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="idDWHecho" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="730e9a3e-ef7d-4f35-8187-9d1e79a561ec" msprop:DbColumnName="idDWHecho" msprop:FriendlyName="idDWHecho" type="xs:int" />
+                  <xs:element name="idElementoParque" msprop:design-time-name="67751f0c-8688-4fad-9ba0-10bd15392e91" msprop:DbColumnName="idElementoParque" msprop:FriendlyName="idElementoParque" type="xs:int" />
+                  <xs:element name="idGasto" msprop:design-time-name="30df0c95-1a42-4f10-bc22-d84aae9ea506" msprop:DbColumnName="idGasto" msprop:FriendlyName="idGasto" type="xs:int" />
+                  <xs:element name="idIngreso" msprop:design-time-name="c2c75129-4366-4506-a6b1-eb5079a19971" msprop:DbColumnName="idIngreso" msprop:FriendlyName="idIngreso" type="xs:int" />
+                  <xs:element name="idTiempo" msprop:design-time-name="16b7db33-ff22-4c3d-812d-02fb1940d8a5" msprop:DbColumnName="idTiempo" msprop:FriendlyName="idTiempo" type="xs:int" />
+                  <xs:element name="IngresosTotales" msprop:design-time-name="29486ceb-3e17-494f-b3db-4e9f5f88fc02" msprop:DbColumnName="IngresosTotales" msprop:FriendlyName="IngresosTotales" type="xs:long" />
+                  <xs:element name="GastosTotales" msprop:design-time-name="836e59d9-ced5-464e-9040-8db5bf5c143e" msprop:DbColumnName="GastosTotales" msprop:FriendlyName="GastosTotales" type="xs:long" />
+                  <xs:element name="Utilidades" msprop:design-time-name="327a8e98-c7f5-47e1-b9d7-471500024854" msprop:DbColumnName="Utilidades" msprop:FriendlyName="Utilidades" type="xs:long" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_D_Ingreso" />
+          <xs:field xpath="idIngreso" />
+        </xs:unique>
+        <xs:unique name="dbo_D_Tiempo_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_D_Tiempo" />
+          <xs:field xpath="idTiempo" />
+        </xs:unique>
+        <xs:unique name="dbo_D_Gasto_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_D_Gasto" />
+          <xs:field xpath="idGasto" />
+        </xs:unique>
+        <xs:unique name="dbo_D_ElementoParque_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_D_ElementoParque" />
+          <xs:field xpath="idElementoParque" />
+        </xs:unique>
+        <xs:unique name="dbo_H_DW_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_H_DW" />
+          <xs:field xpath="idDWHecho" />
+        </xs:unique>
+        <xs:keyref name="FK_H_DW_D_Gasto" refer="dbo_D_Gasto_Constraint1">
+          <xs:selector xpath=".//dbo_H_DW" />
+          <xs:field xpath="idGasto" />
+        </xs:keyref>
+        <xs:keyref name="FK_H_DW_D_ElementoParque" refer="dbo_D_ElementoParque_Constraint1">
+          <xs:selector xpath=".//dbo_H_DW" />
+          <xs:field xpath="idElementoParque" />
+        </xs:keyref>
+        <xs:keyref name="FK_H_DW_D_Tiempo" refer="dbo_D_Tiempo_Constraint1">
+          <xs:selector xpath=".//dbo_H_DW" />
+          <xs:field xpath="idTiempo" />
+        </xs:keyref>
+        <xs:keyref name="FK_H_DW_D_Ingreso" refer="Constraint1">
+          <xs:selector xpath=".//dbo_H_DW" />
+          <xs:field xpath="idIngreso" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <DW_x0020_Green_x0020_TEC xmlns="" />
+  </Schema>
+</DataSourceView>

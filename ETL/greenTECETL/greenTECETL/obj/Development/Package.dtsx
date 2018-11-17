@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="2"
-  DTS:VersionGUID="{9E3AF6FB-F84F-4B21-B325-46BF854436AA}">
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{DFCF81CC-40E5-4A62-86CB-8CD3C8F8A93C}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -732,11 +732,6 @@
                       lineageId="Package\Finalizacion\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[IngresoTotal]"
                       name="IngresoTotal" />
                     <outputColumn
-                      refId="Package\Finalizacion\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Utilidades]"
-                      dataType="i4"
-                      lineageId="Package\Finalizacion\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Utilidades]"
-                      name="Utilidades" />
-                    <outputColumn
                       refId="Package\Finalizacion\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[idElementoParque]"
                       dataType="i8"
                       lineageId="Package\Finalizacion\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[idElementoParque]"
@@ -756,6 +751,11 @@
                       dataType="i8"
                       lineageId="Package\Finalizacion\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[idTiempo]"
                       name="idTiempo" />
+                    <outputColumn
+                      refId="Package\Finalizacion\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Utilidades]"
+                      dataType="i4"
+                      lineageId="Package\Finalizacion\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Utilidades]"
+                      name="Utilidades" />
                     <outputColumn
                       refId="Package\Finalizacion\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
                       dataType="i4"
@@ -1812,6 +1812,10 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="104,42"
+          Id="Package\Crear"
+          TopLeft="356,10" />
+        <NodeLayout
           Size="160,42"
           Id="Package\ElementosParque"
           TopLeft="231,134" />
@@ -1827,6 +1831,10 @@
           Size="120,42"
           Id="Package\Ingresos"
           TopLeft="155,67" />
+        <NodeLayout
+          Size="113,42"
+          Id="Package\Limpiar"
+          TopLeft="585,11" />
         <NodeLayout
           Size="114,42"
           Id="Package\Tiempo"
@@ -1955,14 +1963,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="104,42"
-          Id="Package\Crear"
-          TopLeft="356,10" />
-        <NodeLayout
-          Size="113,42"
-          Id="Package\Limpiar"
-          TopLeft="585,11" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 4]"
           TopLeft="585,31.5">
@@ -2095,37 +2095,37 @@
         <NodeLayout
           Size="164,42"
           Id="Package\Finalizacion\Origen de OLE DB"
-          TopLeft="128,84" />
+          TopLeft="183,99" />
         <NodeLayout
           Size="176,42"
           Id="Package\Finalizacion\Destino de ADO NET"
-          TopLeft="348,172" />
+          TopLeft="442,214" />
         <EdgeLayout
           Id="Package\Finalizacion.Paths[Salida de origen de OLE DB]"
-          TopLeft="210,126">
+          TopLeft="265,141">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="226,46"
+              EndConnector="265,73"
               Start="0,0"
-              End="226,38.5">
+              End="265,65.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,19" />
+                    End="0,32.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,19"
-                    Point2="0,23"
-                    Point3="4,23" />
+                    Point1="0,32.5"
+                    Point2="0,36.5"
+                    Point3="4,36.5" />
                   <mssgle:LineSegment
-                    End="222,23" />
+                    End="261,36.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="222,23"
-                    Point2="226,23"
-                    Point3="226,27" />
+                    Point1="261,36.5"
+                    Point2="265,36.5"
+                    Point3="265,40.5" />
                   <mssgle:LineSegment
-                    End="226,38.5" />
+                    End="265,65.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2137,27 +2137,6 @@
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Finalizacion\Destino de ADO NET">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Finalizacion\Origen de OLE DB">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">View</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Gastos">
     <LayoutInfo>
@@ -2403,6 +2382,27 @@
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Tiempo\Destino de ADO NET">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Finalizacion\Origen de OLE DB">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">View</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Finalizacion\Destino de ADO NET">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

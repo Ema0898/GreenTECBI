@@ -1,0 +1,82 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>greenTECCubeII</Database>
+    <Server>DESKTOP-M5BKNIK\MSSQLSERVER2017E</Server>
+    <ConnectionString>Data Source=DESKTOP-M5BKNIK\MSSQLSERVER2017E;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>bauVHZPg3Q+pv/st30Aui6hlErE=17/11/2018 14:08:1517/11/2018 14:08:15</TimeStamp>
+        <ID>
+          <String>DW Green TEC</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>oF5oplX0Nxeb/gGAuC3p35VXzSo=17/11/2018 14:08:4317/11/2018 14:08:42</TimeStamp>
+        <ID>
+          <String>DW Green TEC</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>8vF2jR3qHzWvbPmcBiV1b1xFtbU=17/11/2018 14:09:5417/11/2018 14:09:53</TimeStamp>
+        <ID>
+          <String>D Ingreso</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>TZMG3MQ+EEf7xsb62Ezh/qYOlhM=17/11/2018 14:10:0617/11/2018 14:10:06</TimeStamp>
+        <ID>
+          <String>D Tiempo</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>mJoaW2XMltvps+W9z4XYyknJhy0=17/11/2018 14:10:1917/11/2018 14:10:19</TimeStamp>
+        <ID>
+          <String>D Gasto</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ksF2OdYFHrJxkdpHqRyjMSB107U=17/11/2018 14:10:3317/11/2018 14:10:33</TimeStamp>
+        <ID>
+          <String>D Elemento Parque</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>fy3ITmpnRgaxZYRQZl7zlYQiQoI=17/11/2018 14:12:0917/11/2018 14:12:087eroFGWE9zSOysDGnf8s8G3kXGM=17/11/2018 14:12:0917/11/2018 14:12:08</TimeStamp>
+        <ID>
+          <String>DW Green TEC</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>2HnfidkMxGWIU3lk1o6jR5syOm0=17/11/2018 14:05:3717/11/2018 14:05:36</TimeStamp>
+      <ID>
+        <String>greenTECCubeII</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2018-11-17T20:13:58.383333Z</LastDeployed>
+</DeploymentSnapshot>

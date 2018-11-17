@@ -3,39 +3,27 @@
   <df:DefaultFontFamily>Segoe UI</df:DefaultFontFamily>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="DataSource2">
+    <DataSource Name="DataSource1">
       <ConnectionProperties>
         <DataProvider>OLEDB-MD</DataProvider>
-        <ConnectString>Data Source=DESKTOP-M5BKNIK\MSSQLSERVER2017E;Initial Catalog=greenTECCube</ConnectString>
+        <ConnectString>Data Source=DESKTOP-M5BKNIK\MSSQLSERVER2017E;Initial Catalog=greenTECCubeII</ConnectString>
         <IntegratedSecurity>true</IntegratedSecurity>
       </ConnectionProperties>
       <rd:SecurityType>Integrated</rd:SecurityType>
-      <rd:DataSourceID>71659458-642c-4575-a2ec-a3f541a58fac</rd:DataSourceID>
+      <rd:DataSourceID>e240a60e-312c-4b01-a23a-d47174f3eeae</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
     <DataSet Name="DataSet1">
       <Query>
-        <DataSourceName>DataSource2</DataSourceName>
-        <CommandText> SELECT NON EMPTY { [Measures].[Gastos Totales], [Measures].[Ingresos Totales] } ON COLUMNS, NON EMPTY { ([D Tiempo].[Anio].[Anio].ALLMEMBERS * [D Elemento Parque].[Nombre Parque].[Nombre Parque].ALLMEMBERS * [D Tiempo].[Mes].[Mes].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [DW Green TEC] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</CommandText>
-        <Timeout>30</Timeout>
+        <DataSourceName>DataSource1</DataSourceName>
+        <CommandText> SELECT NON EMPTY { [Measures].[Gastos Totales], [Measures].[Ingresos Totales], [Measures].[Utilidades] } ON COLUMNS, NON EMPTY { ([D Elemento Parque].[Nombre Parque].[Nombre Parque].ALLMEMBERS * [D Tiempo].[Anio].[Anio].ALLMEMBERS * [D Tiempo].[Mes].[Mes].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [DW Green TEC] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</CommandText>
         <rd:DesignerState>
           <QueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
             <CommandType>MDX</CommandType>
             <QuerySpecification xsi:type="MDXQuerySpecification">
               <Select>
                 <Items>
-                  <Item>
-                    <ID xsi:type="Level">
-                      <DimensionName>D Tiempo</DimensionName>
-                      <HierarchyName>Anio</HierarchyName>
-                      <HierarchyUniqueName>[D Tiempo].[Anio]</HierarchyUniqueName>
-                      <LevelName>Anio</LevelName>
-                      <UniqueName>[D Tiempo].[Anio].[Anio]</UniqueName>
-                    </ID>
-                    <ItemCaption>Anio</ItemCaption>
-                    <UniqueName>true</UniqueName>
-                  </Item>
                   <Item>
                     <ID xsi:type="Level">
                       <DimensionName>D Elemento Parque</DimensionName>
@@ -45,6 +33,17 @@
                       <UniqueName>[D Elemento Parque].[Nombre Parque].[Nombre Parque]</UniqueName>
                     </ID>
                     <ItemCaption>Nombre Parque</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>D Tiempo</DimensionName>
+                      <HierarchyName>Anio</HierarchyName>
+                      <HierarchyUniqueName>[D Tiempo].[Anio]</HierarchyUniqueName>
+                      <LevelName>Anio</LevelName>
+                      <UniqueName>[D Tiempo].[Anio].[Anio]</UniqueName>
+                    </ID>
+                    <ItemCaption>Anio</ItemCaption>
                     <UniqueName>true</UniqueName>
                   </Item>
                   <Item>
@@ -90,6 +89,22 @@
                     <FormattedValue>true</FormattedValue>
                     <FormatString>true</FormatString>
                   </Item>
+                  <Item>
+                    <ID xsi:type="Measure">
+                      <MeasureName>Utilidades</MeasureName>
+                      <UniqueName>[Measures].[Utilidades]</UniqueName>
+                    </ID>
+                    <ItemCaption>Utilidades</ItemCaption>
+                    <BackColor>true</BackColor>
+                    <ForeColor>true</ForeColor>
+                    <FontFamily>true</FontFamily>
+                    <FontSize>true</FontSize>
+                    <FontWeight>true</FontWeight>
+                    <FontStyle>true</FontStyle>
+                    <FontDecoration>true</FontDecoration>
+                    <FormattedValue>true</FormattedValue>
+                    <FormatString>true</FormatString>
+                  </Item>
                 </Items>
               </Select>
               <AutoExecute>false</AutoExecute>
@@ -104,19 +119,19 @@
               </QueryProperties>
             </QuerySpecification>
             <Query>
-              <Statement> SELECT NON EMPTY { [Measures].[Gastos Totales], [Measures].[Ingresos Totales] } ON COLUMNS, NON EMPTY { ([D Tiempo].[Anio].[Anio].ALLMEMBERS * [D Elemento Parque].[Nombre Parque].[Nombre Parque].ALLMEMBERS * [D Tiempo].[Mes].[Mes].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [DW Green TEC] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</Statement>
+              <Statement> SELECT NON EMPTY { [Measures].[Gastos Totales], [Measures].[Ingresos Totales], [Measures].[Utilidades] } ON COLUMNS, NON EMPTY { ([D Elemento Parque].[Nombre Parque].[Nombre Parque].ALLMEMBERS * [D Tiempo].[Anio].[Anio].ALLMEMBERS * [D Tiempo].[Mes].[Mes].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [DW Green TEC] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</Statement>
               <ParameterDefinitions />
             </Query>
           </QueryDefinition>
         </rd:DesignerState>
       </Query>
       <Fields>
-        <Field Name="Anio">
-          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[D Tiempo].[Anio].[Anio]" /&gt;</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="Nombre_Parque">
           <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[D Elemento Parque].[Nombre Parque].[Nombre Parque]" /&gt;</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Anio">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[D Tiempo].[Anio].[Anio]" /&gt;</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Mes">
@@ -131,6 +146,10 @@
           <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[Ingresos Totales]" /&gt;</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
+        <Field Name="Utilidades">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[Utilidades]" /&gt;</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
       </Fields>
     </DataSet>
   </DataSets>
@@ -138,21 +157,21 @@
     <ReportSection>
       <Body>
         <ReportItems>
-          <Chart Name="Chart5">
+          <Chart Name="Chart1">
             <ChartCategoryHierarchy>
               <ChartMembers>
                 <ChartMember>
-                  <Group Name="Chart5_CategoryGroup">
+                  <Group Name="Chart1_CategoryGroup">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!Mes.Value</GroupExpression>
+                      <GroupExpression>=Fields!Anio.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!Mes.Value</Value>
+                      <Value>=Fields!Anio.Value</Value>
                     </SortExpression>
                   </SortExpressions>
-                  <Label>=Fields!Mes.Value</Label>
+                  <Label>=Fields!Anio.Value</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartCategoryHierarchy>
@@ -172,9 +191,7 @@
                         <Y>=Sum(Fields!Gastos_Totales.Value)</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
-                        <Style>
-                          <Color>DarkBlue</Color>
-                        </Style>
+                        <Style />
                         <UseValueAsLabel>true</UseValueAsLabel>
                         <Visible>true</Visible>
                       </ChartDataLabel>
@@ -459,7 +476,7 @@
             </ChartLegends>
             <ChartTitles>
               <ChartTitle Name="Default">
-                <Caption>Costos y Ganancias de Parques por Mes</Caption>
+                <Caption>Título del gráfico</Caption>
                 <Style>
                   <BackgroundGradientType>None</BackgroundGradientType>
                   <FontSize>9pt</FontSize>
@@ -489,8 +506,8 @@
               </Style>
             </ChartNoDataMessage>
             <DataSetName>DataSet1</DataSetName>
-            <Top>3.22474cm</Top>
-            <Left>2.16641cm</Left>
+            <Top>2.64266cm</Top>
+            <Left>4.23016cm</Left>
             <Height>5cm</Height>
             <Width>7.5cm</Width>
             <Style>
