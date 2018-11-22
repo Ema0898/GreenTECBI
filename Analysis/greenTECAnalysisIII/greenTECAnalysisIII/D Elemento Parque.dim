@@ -1,0 +1,139 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="3d092c5d-ded3-4cd7-a4e8-be26dbf6a645" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>D Elemento Parque</ID>
+  <Name>D Elemento Parque</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="04f21074-371a-41f8-8f0f-9c0bf6845bab">
+    <DataSourceViewID>DW Green TEC</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="80e622ac-56c6-489e-94f1-34e4d0bcc8c4">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="cad5bb40-2464-475c-b937-0f53b063487e">
+      <ID>Id Elemento Parque</ID>
+      <Name>Id Elemento Parque</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e4c2740f-bcdf-432f-9caf-2d9fab1513f0">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b68ed1d6-c55c-40d5-9d25-600f5c6aa199">
+            <TableID>dbo_D_ElementoParque</TableID>
+            <ColumnID>idElementoParque</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="7c48d0dc-9045-43a7-9fbd-8b8793b407d8">
+          <AttributeID>Nombre Parque</AttributeID>
+          <Name>Nombre Parque</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7c76ad9d-46b9-46f5-a3d6-a4c9ea4b1488">
+          <AttributeID>Nombre Area Parque</AttributeID>
+          <Name>Nombre Area Parque</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2c003ffc-9bde-4b39-af6c-89ddbcdea4ef">
+          <AttributeID>Nombre Excursion</AttributeID>
+          <Name>Nombre Excursion</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5d6628b6-c245-4592-8b79-d3fac15cf0b2">
+      <ID>Nombre Parque</ID>
+      <Name>Nombre Parque</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="348e1f92-9e87-4697-b092-0c3817c0f538">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="23232693-edce-4c33-a9d4-ee2ab954a766">
+            <TableID>dbo_D_ElementoParque</TableID>
+            <ColumnID>NombreParque</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b5ec63bd-0fc6-4d43-b23e-e7fca465bf07">
+      <ID>Nombre Area Parque</ID>
+      <Name>Nombre Area Parque</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6b48141b-ae87-4bd2-b076-8520adf1fc79">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c394bb4d-81a3-4160-a438-d1921c90eb82">
+            <TableID>dbo_D_ElementoParque</TableID>
+            <ColumnID>NombreAreaParque</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="42eba95c-a3b0-45e4-b5af-0a5b610ee49b">
+      <ID>Nombre Excursion</ID>
+      <Name>Nombre Excursion</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3ce40559-feda-4d82-9e58-c94ba9316298">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d1dc9748-d8b3-4820-b26c-40cf9a645b53">
+            <TableID>dbo_D_ElementoParque</TableID>
+            <ColumnID>NombreExcursion</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

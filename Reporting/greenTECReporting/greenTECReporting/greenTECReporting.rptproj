@@ -49,9 +49,9 @@
     <Reports>@(Report)</Reports>
   </PropertyGroup>
   <ItemGroup>
-    <Report Include="Report1.rdl" />
-    <Report Include="Report2.rdl" />
-    <Report Include="Report3.rdl" />
+    <Report Include="Excursiones.rdl" />
+    <Report Include="Parques.rdl" />
+    <Report Include="ZonasYCrecimiento.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>

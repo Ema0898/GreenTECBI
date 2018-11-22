@@ -6,18 +6,18 @@
     <DataSource Name="DataSource1">
       <ConnectionProperties>
         <DataProvider>OLEDB-MD</DataProvider>
-        <ConnectString>Data Source=DESKTOP-M5BKNIK\MSSQLSERVER2017E;Initial Catalog=greenTECCubeII</ConnectString>
+        <ConnectString>Data Source=DESKTOP-M5BKNIK\MSSQLSERVER2017E;Initial Catalog=greenTECCubeIII</ConnectString>
         <IntegratedSecurity>true</IntegratedSecurity>
       </ConnectionProperties>
       <rd:SecurityType>Integrated</rd:SecurityType>
-      <rd:DataSourceID>cea0d570-d5f2-4139-acff-a8eb2895ffaf</rd:DataSourceID>
+      <rd:DataSourceID>c8d4fac9-4900-48b9-abf4-426ef1607450</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
     <DataSet Name="DataSet1">
       <Query>
         <DataSourceName>DataSource1</DataSourceName>
-        <CommandText> SELECT NON EMPTY { [Measures].[Gastos Totales], [Measures].[Ingresos Totales], [Measures].[Utilidades] } ON COLUMNS, NON EMPTY { ([D Elemento Parque].[Nombre Excursion].[Nombre Excursion].ALLMEMBERS * [D Tiempo].[Anio].[Anio].ALLMEMBERS * [D Tiempo].[Dia].[Dia].ALLMEMBERS * [D Tiempo].[Mes].[Mes].ALLMEMBERS * [D Tiempo].[Trimestre].[Trimestre].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [DW Green TEC] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</CommandText>
+        <CommandText> SELECT NON EMPTY { [Measures].[Utilidades] } ON COLUMNS, NON EMPTY { ([D Elemento Parque].[Nombre Excursion].[Nombre Excursion].ALLMEMBERS * [D Tiempo].[Anio].[Anio].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [DW Green TEC] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</CommandText>
         <rd:DesignerState>
           <QueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
             <CommandType>MDX</CommandType>
@@ -45,71 +45,6 @@
                     </ID>
                     <ItemCaption>Anio</ItemCaption>
                     <UniqueName>true</UniqueName>
-                  </Item>
-                  <Item>
-                    <ID xsi:type="Level">
-                      <DimensionName>D Tiempo</DimensionName>
-                      <HierarchyName>Dia</HierarchyName>
-                      <HierarchyUniqueName>[D Tiempo].[Dia]</HierarchyUniqueName>
-                      <LevelName>Dia</LevelName>
-                      <UniqueName>[D Tiempo].[Dia].[Dia]</UniqueName>
-                    </ID>
-                    <ItemCaption>Dia</ItemCaption>
-                    <UniqueName>true</UniqueName>
-                  </Item>
-                  <Item>
-                    <ID xsi:type="Level">
-                      <DimensionName>D Tiempo</DimensionName>
-                      <HierarchyName>Mes</HierarchyName>
-                      <HierarchyUniqueName>[D Tiempo].[Mes]</HierarchyUniqueName>
-                      <LevelName>Mes</LevelName>
-                      <UniqueName>[D Tiempo].[Mes].[Mes]</UniqueName>
-                    </ID>
-                    <ItemCaption>Mes</ItemCaption>
-                    <UniqueName>true</UniqueName>
-                  </Item>
-                  <Item>
-                    <ID xsi:type="Level">
-                      <DimensionName>D Tiempo</DimensionName>
-                      <HierarchyName>Trimestre</HierarchyName>
-                      <HierarchyUniqueName>[D Tiempo].[Trimestre]</HierarchyUniqueName>
-                      <LevelName>Trimestre</LevelName>
-                      <UniqueName>[D Tiempo].[Trimestre].[Trimestre]</UniqueName>
-                    </ID>
-                    <ItemCaption>Trimestre</ItemCaption>
-                    <UniqueName>true</UniqueName>
-                  </Item>
-                  <Item>
-                    <ID xsi:type="Measure">
-                      <MeasureName>Gastos Totales</MeasureName>
-                      <UniqueName>[Measures].[Gastos Totales]</UniqueName>
-                    </ID>
-                    <ItemCaption>Gastos Totales</ItemCaption>
-                    <BackColor>true</BackColor>
-                    <ForeColor>true</ForeColor>
-                    <FontFamily>true</FontFamily>
-                    <FontSize>true</FontSize>
-                    <FontWeight>true</FontWeight>
-                    <FontStyle>true</FontStyle>
-                    <FontDecoration>true</FontDecoration>
-                    <FormattedValue>true</FormattedValue>
-                    <FormatString>true</FormatString>
-                  </Item>
-                  <Item>
-                    <ID xsi:type="Measure">
-                      <MeasureName>Ingresos Totales</MeasureName>
-                      <UniqueName>[Measures].[Ingresos Totales]</UniqueName>
-                    </ID>
-                    <ItemCaption>Ingresos Totales</ItemCaption>
-                    <BackColor>true</BackColor>
-                    <ForeColor>true</ForeColor>
-                    <FontFamily>true</FontFamily>
-                    <FontSize>true</FontSize>
-                    <FontWeight>true</FontWeight>
-                    <FontStyle>true</FontStyle>
-                    <FontDecoration>true</FontDecoration>
-                    <FormattedValue>true</FormattedValue>
-                    <FormatString>true</FormatString>
                   </Item>
                   <Item>
                     <ID xsi:type="Measure">
@@ -141,7 +76,7 @@
               </QueryProperties>
             </QuerySpecification>
             <Query>
-              <Statement> SELECT NON EMPTY { [Measures].[Gastos Totales], [Measures].[Ingresos Totales], [Measures].[Utilidades] } ON COLUMNS, NON EMPTY { ([D Elemento Parque].[Nombre Excursion].[Nombre Excursion].ALLMEMBERS * [D Tiempo].[Anio].[Anio].ALLMEMBERS * [D Tiempo].[Dia].[Dia].ALLMEMBERS * [D Tiempo].[Mes].[Mes].ALLMEMBERS * [D Tiempo].[Trimestre].[Trimestre].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [DW Green TEC] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</Statement>
+              <Statement> SELECT NON EMPTY { [Measures].[Utilidades] } ON COLUMNS, NON EMPTY { ([D Elemento Parque].[Nombre Excursion].[Nombre Excursion].ALLMEMBERS * [D Tiempo].[Anio].[Anio].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [DW Green TEC] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</Statement>
               <ParameterDefinitions />
             </Query>
           </QueryDefinition>
@@ -156,26 +91,6 @@
           <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[D Tiempo].[Anio].[Anio]" /&gt;</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Dia">
-          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[D Tiempo].[Dia].[Dia]" /&gt;</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Mes">
-          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[D Tiempo].[Mes].[Mes]" /&gt;</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Trimestre">
-          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[D Tiempo].[Trimestre].[Trimestre]" /&gt;</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Gastos_Totales">
-          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[Gastos Totales]" /&gt;</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Ingresos_Totales">
-          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[Ingresos Totales]" /&gt;</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
         <Field Name="Utilidades">
           <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[Utilidades]" /&gt;</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
@@ -187,23 +102,55 @@
     <ReportSection>
       <Body>
         <ReportItems>
+          <Textbox Name="Textbox1">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value xml:space="preserve">       </Value>
+                    <Style>
+                      <FontSize>16pt</FontSize>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>  Excursiones más rentables, seccionadas por año</Value>
+                    <Style>
+                      <FontSize>16pt</FontSize>
+                      <Color>DarkBlue</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox1</rd:DefaultName>
+            <Top>0.65828cm</Top>
+            <Left>1.82245cm</Left>
+            <Height>0.73229cm</Height>
+            <Width>16.57583cm</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
           <Tablix Name="Tablix1">
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>3.10854cm</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>3.16146cm</Width>
+                  <Width>4.4491cm</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>2.5cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.5cm</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>2.5cm</Width>
+                  <Width>4.4491cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -212,21 +159,21 @@
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox1">
+                        <Textbox Name="Textbox2">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>NombreExcursion</Value>
+                                  <Value>Nombre Excursion</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox1</rd:DefaultName>
+                          <rd:DefaultName>Textbox2</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -242,21 +189,23 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox3">
+                        <Textbox Name="Textbox10">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Ingresos</Value>
-                                  <Style />
+                                  <Value>Año</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox3</rd:DefaultName>
+                          <rd:DefaultName>Textbox10</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -272,37 +221,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox5">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>Gastos</Value>
-                                  <Style />
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox5</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox7">
+                        <Textbox Name="Textbox6">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -310,47 +229,13 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Utilidades</Value>
-                                  <Style>
-                                    <FontFamily>Arial</FontFamily>
-                                  </Style>
+                                  <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox7</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox9">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>Mes</Value>
-                                  <Style>
-                                    <FontFamily>Arial</FontFamily>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox9</rd:DefaultName>
+                          <rd:DefaultName>Textbox6</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -401,51 +286,23 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Ingresos_Totales">
+                        <Textbox Name="Anio">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Ingresos_Totales.Value</Value>
-                                  <Style />
+                                  <Value>=Fields!Anio.Value</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Ingresos_Totales</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Gastos_Totales">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!Gastos_Totales.Value</Value>
-                                  <Style />
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Gastos_Totales</rd:DefaultName>
+                          <rd:DefaultName>Anio</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -469,47 +326,13 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!Utilidades.Value</Value>
-                                  <Style>
-                                    <FontFamily>Arial</FontFamily>
-                                  </Style>
+                                  <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Utilidades</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Mes">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!Mes.Value</Value>
-                                  <Style>
-                                    <FontFamily>Arial</FontFamily>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Mes</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -532,8 +355,6 @@
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
-                <TablixMember />
-                <TablixMember />
               </TablixMembers>
             </TablixColumnHierarchy>
             <TablixRowHierarchy>
@@ -547,10 +368,17 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
-            <Top>0.92287cm</Top>
-            <Left>3.38349cm</Left>
+            <SortExpressions>
+              <SortExpression>
+                <Value>=Fields!Utilidades.Value</Value>
+                <Direction>Descending</Direction>
+              </SortExpression>
+            </SortExpressions>
+            <Top>1.91092cm</Top>
+            <Left>3.19828cm</Left>
             <Height>1.2cm</Height>
-            <Width>13.77cm</Width>
+            <Width>11.39819cm</Width>
+            <ZIndex>1</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -558,10 +386,10 @@
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>2.86458in</Height>
+        <Height>3.57292in</Height>
         <Style />
       </Body>
-      <Width>8.32651in</Width>
+      <Width>8.33333in</Width>
       <Page>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>
@@ -581,5 +409,5 @@
     </GridLayoutDefinition>
   </ReportParametersLayout>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
-  <rd:ReportID>011b9f33-223c-48fc-8c93-9cd03badfbcb</rd:ReportID>
+  <rd:ReportID>35dad4e9-79a2-454d-8756-786834bb42f2</rd:ReportID>
 </Report>
