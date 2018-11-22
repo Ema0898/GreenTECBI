@@ -10,14 +10,14 @@
         <IntegratedSecurity>true</IntegratedSecurity>
       </ConnectionProperties>
       <rd:SecurityType>Integrated</rd:SecurityType>
-      <rd:DataSourceID>e240a60e-312c-4b01-a23a-d47174f3eeae</rd:DataSourceID>
+      <rd:DataSourceID>cea0d570-d5f2-4139-acff-a8eb2895ffaf</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
     <DataSet Name="DataSet1">
       <Query>
         <DataSourceName>DataSource1</DataSourceName>
-        <CommandText> SELECT NON EMPTY { [Measures].[Gastos Totales], [Measures].[Ingresos Totales], [Measures].[Utilidades] } ON COLUMNS, NON EMPTY { ([D Elemento Parque].[Nombre Parque].[Nombre Parque].ALLMEMBERS * [D Tiempo].[Anio].[Anio].ALLMEMBERS * [D Tiempo].[Mes].[Mes].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [DW Green TEC] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</CommandText>
+        <CommandText> SELECT NON EMPTY { [Measures].[Gastos Totales], [Measures].[Ingresos Totales], [Measures].[Utilidades] } ON COLUMNS, NON EMPTY { ([D Elemento Parque].[Nombre Excursion].[Nombre Excursion].ALLMEMBERS * [D Tiempo].[Anio].[Anio].ALLMEMBERS * [D Tiempo].[Dia].[Dia].ALLMEMBERS * [D Tiempo].[Mes].[Mes].ALLMEMBERS * [D Tiempo].[Trimestre].[Trimestre].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [DW Green TEC] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</CommandText>
         <rd:DesignerState>
           <QueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
             <CommandType>MDX</CommandType>
@@ -27,12 +27,12 @@
                   <Item>
                     <ID xsi:type="Level">
                       <DimensionName>D Elemento Parque</DimensionName>
-                      <HierarchyName>Nombre Parque</HierarchyName>
-                      <HierarchyUniqueName>[D Elemento Parque].[Nombre Parque]</HierarchyUniqueName>
-                      <LevelName>Nombre Parque</LevelName>
-                      <UniqueName>[D Elemento Parque].[Nombre Parque].[Nombre Parque]</UniqueName>
+                      <HierarchyName>Nombre Excursion</HierarchyName>
+                      <HierarchyUniqueName>[D Elemento Parque].[Nombre Excursion]</HierarchyUniqueName>
+                      <LevelName>Nombre Excursion</LevelName>
+                      <UniqueName>[D Elemento Parque].[Nombre Excursion].[Nombre Excursion]</UniqueName>
                     </ID>
-                    <ItemCaption>Nombre Parque</ItemCaption>
+                    <ItemCaption>Nombre Excursion</ItemCaption>
                     <UniqueName>true</UniqueName>
                   </Item>
                   <Item>
@@ -49,12 +49,34 @@
                   <Item>
                     <ID xsi:type="Level">
                       <DimensionName>D Tiempo</DimensionName>
+                      <HierarchyName>Dia</HierarchyName>
+                      <HierarchyUniqueName>[D Tiempo].[Dia]</HierarchyUniqueName>
+                      <LevelName>Dia</LevelName>
+                      <UniqueName>[D Tiempo].[Dia].[Dia]</UniqueName>
+                    </ID>
+                    <ItemCaption>Dia</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>D Tiempo</DimensionName>
                       <HierarchyName>Mes</HierarchyName>
                       <HierarchyUniqueName>[D Tiempo].[Mes]</HierarchyUniqueName>
                       <LevelName>Mes</LevelName>
                       <UniqueName>[D Tiempo].[Mes].[Mes]</UniqueName>
                     </ID>
                     <ItemCaption>Mes</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>D Tiempo</DimensionName>
+                      <HierarchyName>Trimestre</HierarchyName>
+                      <HierarchyUniqueName>[D Tiempo].[Trimestre]</HierarchyUniqueName>
+                      <LevelName>Trimestre</LevelName>
+                      <UniqueName>[D Tiempo].[Trimestre].[Trimestre]</UniqueName>
+                    </ID>
+                    <ItemCaption>Trimestre</ItemCaption>
                     <UniqueName>true</UniqueName>
                   </Item>
                   <Item>
@@ -119,23 +141,31 @@
               </QueryProperties>
             </QuerySpecification>
             <Query>
-              <Statement> SELECT NON EMPTY { [Measures].[Gastos Totales], [Measures].[Ingresos Totales], [Measures].[Utilidades] } ON COLUMNS, NON EMPTY { ([D Elemento Parque].[Nombre Parque].[Nombre Parque].ALLMEMBERS * [D Tiempo].[Anio].[Anio].ALLMEMBERS * [D Tiempo].[Mes].[Mes].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [DW Green TEC] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</Statement>
+              <Statement> SELECT NON EMPTY { [Measures].[Gastos Totales], [Measures].[Ingresos Totales], [Measures].[Utilidades] } ON COLUMNS, NON EMPTY { ([D Elemento Parque].[Nombre Excursion].[Nombre Excursion].ALLMEMBERS * [D Tiempo].[Anio].[Anio].ALLMEMBERS * [D Tiempo].[Dia].[Dia].ALLMEMBERS * [D Tiempo].[Mes].[Mes].ALLMEMBERS * [D Tiempo].[Trimestre].[Trimestre].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [DW Green TEC] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</Statement>
               <ParameterDefinitions />
             </Query>
           </QueryDefinition>
         </rd:DesignerState>
       </Query>
       <Fields>
-        <Field Name="Nombre_Parque">
-          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[D Elemento Parque].[Nombre Parque].[Nombre Parque]" /&gt;</DataField>
+        <Field Name="Nombre_Excursion">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[D Elemento Parque].[Nombre Excursion].[Nombre Excursion]" /&gt;</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Anio">
           <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[D Tiempo].[Anio].[Anio]" /&gt;</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="Dia">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[D Tiempo].[Dia].[Dia]" /&gt;</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="Mes">
           <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[D Tiempo].[Mes].[Mes]" /&gt;</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Trimestre">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[D Tiempo].[Trimestre].[Trimestre]" /&gt;</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Gastos_Totales">
@@ -152,109 +182,6 @@
         </Field>
       </Fields>
     </DataSet>
-    <DataSet Name="DataSet2">
-      <Query>
-        <DataSourceName>DataSource1</DataSourceName>
-        <CommandText> SELECT NON EMPTY { [Measures].[Gastos Totales], [Measures].[Ingresos Totales] } ON COLUMNS, NON EMPTY { ([D Elemento Parque].[Nombre Parque].[Nombre Parque].ALLMEMBERS * [D Tiempo].[Anio].[Anio].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [DW Green TEC] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</CommandText>
-        <rd:DesignerState>
-          <QueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
-            <CommandType>MDX</CommandType>
-            <QuerySpecification xsi:type="MDXQuerySpecification">
-              <Select>
-                <Items>
-                  <Item>
-                    <ID xsi:type="Level">
-                      <DimensionName>D Elemento Parque</DimensionName>
-                      <HierarchyName>Nombre Parque</HierarchyName>
-                      <HierarchyUniqueName>[D Elemento Parque].[Nombre Parque]</HierarchyUniqueName>
-                      <LevelName>Nombre Parque</LevelName>
-                      <UniqueName>[D Elemento Parque].[Nombre Parque].[Nombre Parque]</UniqueName>
-                    </ID>
-                    <ItemCaption>Nombre Parque</ItemCaption>
-                    <UniqueName>true</UniqueName>
-                  </Item>
-                  <Item>
-                    <ID xsi:type="Level">
-                      <DimensionName>D Tiempo</DimensionName>
-                      <HierarchyName>Anio</HierarchyName>
-                      <HierarchyUniqueName>[D Tiempo].[Anio]</HierarchyUniqueName>
-                      <LevelName>Anio</LevelName>
-                      <UniqueName>[D Tiempo].[Anio].[Anio]</UniqueName>
-                    </ID>
-                    <ItemCaption>Anio</ItemCaption>
-                    <UniqueName>true</UniqueName>
-                  </Item>
-                  <Item>
-                    <ID xsi:type="Measure">
-                      <MeasureName>Gastos Totales</MeasureName>
-                      <UniqueName>[Measures].[Gastos Totales]</UniqueName>
-                    </ID>
-                    <ItemCaption>Gastos Totales</ItemCaption>
-                    <BackColor>true</BackColor>
-                    <ForeColor>true</ForeColor>
-                    <FontFamily>true</FontFamily>
-                    <FontSize>true</FontSize>
-                    <FontWeight>true</FontWeight>
-                    <FontStyle>true</FontStyle>
-                    <FontDecoration>true</FontDecoration>
-                    <FormattedValue>true</FormattedValue>
-                    <FormatString>true</FormatString>
-                  </Item>
-                  <Item>
-                    <ID xsi:type="Measure">
-                      <MeasureName>Ingresos Totales</MeasureName>
-                      <UniqueName>[Measures].[Ingresos Totales]</UniqueName>
-                    </ID>
-                    <ItemCaption>Ingresos Totales</ItemCaption>
-                    <BackColor>true</BackColor>
-                    <ForeColor>true</ForeColor>
-                    <FontFamily>true</FontFamily>
-                    <FontSize>true</FontSize>
-                    <FontWeight>true</FontWeight>
-                    <FontStyle>true</FontStyle>
-                    <FontDecoration>true</FontDecoration>
-                    <FormattedValue>true</FormattedValue>
-                    <FormatString>true</FormatString>
-                  </Item>
-                </Items>
-              </Select>
-              <AutoExecute>false</AutoExecute>
-              <From>DW Green TEC</From>
-              <Filter>
-                <FilterItems />
-              </Filter>
-              <Calculations />
-              <Aggregates />
-              <QueryProperties>
-                <IncludeMemberValue>true</IncludeMemberValue>
-              </QueryProperties>
-            </QuerySpecification>
-            <Query>
-              <Statement> SELECT NON EMPTY { [Measures].[Gastos Totales], [Measures].[Ingresos Totales] } ON COLUMNS, NON EMPTY { ([D Elemento Parque].[Nombre Parque].[Nombre Parque].ALLMEMBERS * [D Tiempo].[Anio].[Anio].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [DW Green TEC] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</Statement>
-              <ParameterDefinitions />
-            </Query>
-          </QueryDefinition>
-        </rd:DesignerState>
-      </Query>
-      <Fields>
-        <Field Name="Nombre_Parque">
-          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[D Elemento Parque].[Nombre Parque].[Nombre Parque]" /&gt;</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Anio">
-          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[D Tiempo].[Anio].[Anio]" /&gt;</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Gastos_Totales">
-          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[Gastos Totales]" /&gt;</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Ingresos_Totales">
-          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[Ingresos Totales]" /&gt;</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-      </Fields>
-    </DataSet>
   </DataSets>
   <ReportSections>
     <ReportSection>
@@ -264,7 +191,10 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>2.84396cm</Width>
+                  <Width>3.10854cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>3.16146cm</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>2.5cm</Width>
@@ -289,7 +219,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Nombre Parque</Value>
+                                  <Value>NombreExcursion</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -297,38 +227,6 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox1</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox7">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>Año</Value>
-                                  <Style>
-                                    <FontFamily>Arial</FontFamily>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox7</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -402,28 +300,25 @@
                         </Textbox>
                       </CellContents>
                     </TablixCell>
-                  </TablixCells>
-                </TablixRow>
-                <TablixRow>
-                  <Height>0.6cm</Height>
-                  <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Nombre_Parque">
+                        <Textbox Name="Textbox7">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Nombre_Parque.Value</Value>
-                                  <Style />
+                                  <Value>Utilidades</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Nombre_Parque</rd:DefaultName>
+                          <rd:DefaultName>Textbox7</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -439,14 +334,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Anio">
+                        <Textbox Name="Textbox9">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Anio.Value</Value>
+                                  <Value>Mes</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                   </Style>
@@ -455,7 +350,42 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Anio</rd:DefaultName>
+                          <rd:DefaultName>Textbox9</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.6cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Nombre_Excursion">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Nombre_Excursion.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Nombre_Excursion</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -529,12 +459,77 @@
                         </Textbox>
                       </CellContents>
                     </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Utilidades">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Utilidades.Value</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Utilidades</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Mes">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Mes.Value</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Mes</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
                   </TablixCells>
                 </TablixRow>
               </TablixRows>
             </TablixBody>
             <TablixColumnHierarchy>
               <TablixMembers>
+                <TablixMember />
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
@@ -551,11 +546,11 @@
                 </TablixMember>
               </TablixMembers>
             </TablixRowHierarchy>
-            <DataSetName>DataSet2</DataSetName>
-            <Top>0.97578cm</Top>
-            <Left>1.87537cm</Left>
+            <DataSetName>DataSet1</DataSetName>
+            <Top>0.92287cm</Top>
+            <Left>3.38349cm</Left>
             <Height>1.2cm</Height>
-            <Width>10.34396cm</Width>
+            <Width>13.77cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -563,10 +558,10 @@
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>4.85267in</Height>
+        <Height>2.86458in</Height>
         <Style />
       </Body>
-      <Width>6.84734in</Width>
+      <Width>8.32651in</Width>
       <Page>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>
@@ -586,5 +581,5 @@
     </GridLayoutDefinition>
   </ReportParametersLayout>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
-  <rd:ReportID>a58d2436-5b78-42d9-8fd9-1d0df82b35ec</rd:ReportID>
+  <rd:ReportID>011b9f33-223c-48fc-8c93-9cd03badfbcb</rd:ReportID>
 </Report>

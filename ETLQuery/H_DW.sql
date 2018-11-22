@@ -17,7 +17,7 @@ GROUP BY he.Fecha
 
 
 ------ Final ------
-SELECT GastoTotal, IngresoTotal, IngresoTotal - GastoTotal AS Utilidades
+SELECT GastoTotal, IngresoTotal, IngresoTotal - GastoTotal AS Utilidades,
        ROW_NUMBER() OVER (ORDER BY Fecha) idElementoParque, 
        ROW_NUMBER() OVER (ORDER BY Fecha) idGasto, 
 	     ROW_NUMBER() OVER (ORDER BY Fecha) idIngreso,
